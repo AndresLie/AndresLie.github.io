@@ -51,21 +51,21 @@ const projectItems = document.querySelectorAll('.project-item');
             });
         });
     });
+;
 
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);  // Stop observing the section after it becomes visible
-            }
-          });
-        }, { threshold: 0.1 });  // Adjust the threshold as needed
-      
-        // Target the sections
-        document.querySelectorAll("section").forEach(section => {
-          observer.observe(section);
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);  // Stop observing the section after it becomes visible
+        }
       });
-      
+    }, { threshold: 0.1 });  // Adjust the threshold as needed
+  
+    // Target the sections
+    document.querySelectorAll("section").forEach(section => {
+      observer.observe(section);
+    });
+  });
+

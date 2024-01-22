@@ -17,7 +17,7 @@ section {
     transition: opacity 1s, transform 1s;
   }
   
-  section.visible{
+section.visible{
     opacity: 1;
     transform: translateY(0);
   }
