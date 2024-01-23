@@ -21,8 +21,8 @@ section.visible{
     opacity: 1;
     transform: translateY(0);
   }
-  
-/* CSS */
+
+
 .navbar-expanded {
     width: 20vw; /* Adjust based on your expanded navbar width */
     /* Add other styles for expanded state */
@@ -40,6 +40,7 @@ body{
     transition: margin-left 0.5s;
     margin-top: 0;
     margin-left:3.67vw;
+    font-family: "Noto Sans",sans-serif;
 }
 main{
     position: relative;
@@ -142,6 +143,7 @@ header > h2 {
     border-radius: 8px;
     background-color: #404040;
     padding: 0 1vw;
+    flex-wrap: wrap;
 }
 /* #section-skills{
     background-image: url("image/background/background-img.jpg");
@@ -176,6 +178,7 @@ header > h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .skill-items img{
     height: 17vh;
@@ -242,6 +245,7 @@ header > h2 {
     padding-left: 0;
     justify-content: space-around;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 .project-item p{
     margin-top: 1px;
@@ -298,6 +302,7 @@ header > h2 {
 #contact{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 footer{
