@@ -234,10 +234,13 @@ header > h2 {
 }
 
 #section-projects{
+    display: flex;
+    flex-direction: column;
+    
     position: relative;
     top:-4.99vh;
     background:linear-gradient(180deg ,hsl(210, 5.98%, 54.12%) 0%,hsl(210, 6%, 75%)100%);
-    padding-bottom: 18vh;
+    padding-bottom: 35vh;
     height: 60vh;;
 }
 #section-projects h2{
@@ -369,7 +372,7 @@ nav{
     background-color:#666666;
     width:3.67vw;
     overflow: hidden;
-    transition: width 0.3s linear;
+    transition: width 0.5s linear;
     box-shadow: 0 20px 30 px rgba(255, 255, 255, 0.1);
 
 }
