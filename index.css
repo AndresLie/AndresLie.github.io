@@ -235,13 +235,14 @@ header > h2 {
     position: relative;
     top:-4.99vh;
     background:linear-gradient(180deg ,hsl(210, 5.98%, 54.12%) 0%,hsl(210, 6%, 75%)100%);
-
+    padding-bottom: 18vh;
     height: 60vh;;
 }
 #section-projects h2{
     margin-left: 2vh; 
 }
 #project-list{
+    flex-grow: 1;
     margin-left: 2vh;
     display:flex;
     padding-left: 0;
@@ -308,9 +309,12 @@ header > h2 {
 }
 
 footer{
+    top:-7.99vh;
     background-color: hsl(210, 6%, 75%);
     height:25vh;
-    margin-top: -8vh;
+    position: relative;
+    padding-bottom: 8vh;
+
 }
 footer li {
     width: 80px;
@@ -318,9 +322,15 @@ footer li {
     margin: 0 50px;
     list-style-type: none;
   }
-  
+footer ul{
+    padding-top: 9vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    justify-content: space-evenly ;
+}
 footer a {
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 0.2em;
     font-size: 4vw;
     position: relative;
@@ -357,7 +367,7 @@ nav{
     background-color:#666666;
     width:3.67vw;
     overflow: hidden;
-    transition: width 0.2s linear;
+    transition: width 0.3s linear;
     box-shadow: 0 20px 30 px rgba(255, 255, 255, 0.1);
 
 }
@@ -371,7 +381,7 @@ nav li a{
     font-size: 22px;
     display: table;
     width: 18vw;
-    padding: 9px;
+    padding: 0.7vw;
     margin-left: 1px;
     text-decoration: none;
     height:9vh;
@@ -379,6 +389,7 @@ nav li a{
 
 nav li a i{
     position: relative;
+    font-size: 2.4vw;
     width: auto;
     height:9vh;
     text-align: center;
@@ -389,6 +400,7 @@ nav li a i{
 nav li a span{
     justify-content: center;
     height:9vh;
+  
 }
 nav ul{
     list-style-type: none;
@@ -397,7 +409,7 @@ nav ul{
 .nav-item{
     position: relative;
     top:12px;
-    font-size: 25px;
+    font-size: 2vw;
     margin-left: 8px;
     
 }
@@ -405,7 +417,7 @@ nav ul{
 nav li a:hover{
     background: #404040;
     border-radius: 13px;
-    transition: 0.45s;
+    transition: 0.3s;
 }
 nav:hover {
     width: 20vw;
@@ -419,52 +431,6 @@ nav:hover {
 /* ... (existing styles) ... */
 
 /* Media Queries */
-@media (max-width: 768px) { /* For tablets and smaller devices */
-    /* Navbar adjustments */
-    nav {
-        width: 15vw; /* Adjust based on your preference */
-    }
 
-    nav li a {
-        font-size: 18px; /* Smaller font size */
-        padding: 7px; /* Adjust padding */
-    }
-
-    /* Main content adjustments */
-    main {
-        margin-left: 15vw; /* Adjust so the main content starts to the right of the navbar */
-    }
-
-    /* Header adjustments */
-    header > h1 {
-        font-size: 2.5rem; /* Smaller size for smaller screens */
-    }
-
-    /* ... (other adjustments like section padding, font sizes, etc.) ... */
-}
-
-@media (max-width: 480px) { /* For mobile phones */
-    /* Navbar adjustments */
-    nav {
-        width: 25vw; /* Adjust based on your preference */
-    }
-
-    nav li a {
-        font-size: 16px; /* Even smaller font size */
-        padding: 5px; /* Adjust padding */
-    }
-
-    /* Main content adjustments */
-    main {
-        margin-left: 25vw; /* Adjust so the main content starts to the right of the navbar */
-    }
-
-    /* Header adjustments */
-    header > h1 {
-        font-size: 2rem; /* Even smaller size for mobile phones */
-    }
-
-    /* ... (other adjustments like section padding, font sizes, etc.) ... */
-}
 
 /* ... (existing styles) ... */
