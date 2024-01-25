@@ -103,7 +103,7 @@ header > h2 {
     border-radius: 1.125rem; /* converted to rem */
     border: 2px solid #1a1a1a;
     font-size: 1.5625rem; /* equivalent to 25px */
-
+    margin: 0 10vh;
     color:#bfbfbf;
 
 }
@@ -111,10 +111,12 @@ header > h2 {
 #section-overview > p {
     text-align: justify;
     color: #cccccc;
+    margin: 0 10vh;
+    text-justify: inter-word;
 }
 
 #section-overview > h1 {
-    margin: 0.75rem 0; /* converted to rem */
+    margin: 0.75rem 10vh; /* converted to rem */
 }
 
 #trans-text{
