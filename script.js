@@ -69,3 +69,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+//Hamburger Icon
+const hamburger = document.querySelector("#nav-icon3");
+const navList = document.querySelector(".nav-list");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    navList.classList.toggle("open");
+}
+)
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () =>
+{
+    hamburger.classList.remove("active");
+    navList.classList.remove("active");
+}
+)
+)
