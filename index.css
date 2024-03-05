@@ -415,7 +415,7 @@ header > h2 {
     transition: 0.2s;
     filter: blur(0.25rem);
     opacity: 0.7; /* You can adjust the opacity as you like */
-}
+
 
 /* Ensure that the hovered item itself does not get blurred */
 .project-item:hover a,
@@ -570,6 +570,9 @@ nav:hover {
 
 
 @media screen and (max-width: 992px){
+    main{
+        margin-left: 0;
+    }
     nav{
         display: none;
     }
