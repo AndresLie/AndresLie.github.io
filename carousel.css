@@ -1,0 +1,43 @@
+#section-projects{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    top:-4.99vh;
+    background:linear-gradient(180deg ,hsl(210, 5.98%, 54.12%) 0%,hsl(210, 6%, 75%)100%);
+    padding-bottom: 35vh;
+    height: 80vh;;
+}
+#section-projects h2{
+    margin-left: 2vh; 
+}
+#project-list{
+    flex-grow: 1;
+    margin-left: 2vh;
+    display:flex;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.carousel-item{
+    height: 45vh;
+    width: 100%;
+}
+#carouselExampleControls{
+    display: flex;
+    width: 70vw;
+    align-self: center;
+    height: 100%;
+}
+
+.carousel-item>a>img{
+    height: 80%;
+    width: 100%;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+    object-fit: cover;
+}
+.carousel-item>a{
+    color: black;
+}
