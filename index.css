@@ -46,7 +46,6 @@ body{
 }
 main{
     position: relative;
-    margin-left: 3.67vw;
     transition: margin-left 0.5s;
     margin-top: -4vw;
 }
